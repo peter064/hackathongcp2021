@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Meeting Skiver App</title>
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.1.0/socket.io.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        var socket = io();
+        console.log("trying to connect")
+        socket.on('connect', function() {
+            console.log("connected client side")
+        });
+        socket.emit('my event', 'I\'m connected!');
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <section class="main-controls">
+        <canvas class="visualizer"></canvas>
+        Name to alert on:
+        <input id="triggerWord" type="text"></input><br/><br/>
+        Teams Webhook to send alerts to:
+        <input id="webhookUrl" type="password"></input><br/><br/>
+        <div id="buttons">
+          <button class="record">Start Skiving</button>
+          <button class="stop">Stop Skiving</button>
+        </div>
+      </section>
+    </div>
+     <script type="text/javascript"
+         src="{{ url_for('static', filename='app.js') }}"></script>
+  </body>
+</html>

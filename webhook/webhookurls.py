@@ -1,0 +1,2 @@
+cindy_test = "https://cdogcphack.webhook.office.com/webhookb2/1ca2b102-091b-4bc0-a87d-e06d05b73026@41507c88-8a7f-4979-ac87-7a4d61127d74/IncomingWebhook/868e683ac5f4466daeedf549983fe6d3/09e51fdb-7b95-4d1d-9646-b907cffc8ee4"
+alerts_alerts = "https://cdogcphack.webhook.office.com/webhookb2/06d72366-b78c-4006-ad85-c7883712de34@41507c88-8a7f-4979-ac87-7a4d61127d74/IncomingWebhook/2d37d22a2006435e97464e0240ed5fc3/e2bf1e7c-4274-412a-820c-d5de5113343f"

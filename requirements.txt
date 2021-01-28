@@ -1,0 +1,4 @@
+flask==1.1.2
+pyaudio
+google-cloud-pubsub
+python-socketio
